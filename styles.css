@@ -1,9 +1,27 @@
+h1, h2 {
+    text-align: center;
+}
+
+button {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+body {
+    max-width: 60rem;
+    margin: auto;
+}
+
+input {
+    width: 5rem;
+}
+
 .itembox {
-    border: 1px solid black;
-    margin: 4rem;
+    border: 1px solid grey;
     padding: 2rem;
-    padding-left:10rem;
-    padding-right:10rem;
+    padding-left:6rem;
+    padding-right:6rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -15,6 +33,37 @@
     justify-content: space-around;
 }
 
+.left {
+    opacity: 50%;
+}
+
 .total-box {
-    border: 1px solid black;
+    border: 1px solid grey;
+    width: 25vw;
+    height: 40vh;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grand-total {
+    font-size: 2rem;
+    height: 4rem;
+    width: 12rem;
+}
+
+.total-box select {
+    width: 50%;
+    margin-bottom: 1rem;;
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    max-width: 60rem;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    margin: auto;
 }

@@ -12,7 +12,7 @@
         <div class="medication">
             <h3>Medication</h3>
             <select name="cars" id="cars">
-                <option value="volvo"></option>
+                <option value="volvo">Select Medication</option>
                 <option value="volvo">Eliquis</option>
                 <option value="saab">Flovent</option>
                 <option value="mercedes">Skyrizi</option>
@@ -23,6 +23,10 @@
             <h3>Brand/Generic</h3>
             B
         </div>
+        <div class="days">
+            <h3>Day's Supply</h3>
+            <input type="text" name="" id="">
+        </div>
         <div class="quantity">
             <h3>Qty</h3>
             <input type="text" name="" id="">
@@ -32,15 +36,42 @@
             <input type="text" name="" id="">
         </div>
     </div>
-    <button>Add New</button>
+
+    <!-- <button>Add New</button> -->
+
     <div class="total">
-        <div class="total-box total-left">
-            <h2>Split Ship</h2>
-        </div>
-        <div class="total-box total-right">
+
+        <div class="total-box left">
             <h2>Shipping and Total</h2>
+            Shipping:
+            <select name="Shipping" id="shipping">
+                <option value="">Select</option>
+                <option value="">Standard $13.75</option>
+                <option value="">Express $23.75</option>
+            </select>
+            Insulation:
+            <select name="insulation" id="Insulation">
+                <option value="">None</option>
+                <option value="">Styrofoam $15</option>
+                <option value="">Aerosafe $200</option>
+            </select>
+            Number of packages:
+            <select name="packages" id="packages">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select>
+        </div>
+
+        <div class="total-box">
+            <h2>Total</h2>
+            <input type="text" class="grand-total">
         </div>
 
     </div>
+
+    <footer>
+        Pricing calculator is for reference only to gather general quotes and may not reflect final pricing on invoice, due to variables such as insulation, shipment speed, container, and number of split-ships. Prices are subject to change.
+    </footer>
 </body>
 </html>
